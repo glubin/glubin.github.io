@@ -51,6 +51,27 @@ h2{
     font-weight: none;
 }
 
+#box {
+    margin: auto;
+    margin-top: 20px;
+    width: 600px;
+    height: 150px;
+    background-color: #3FA5D5;
+}
+
+.homepage{
+    margin:0px;
+    padding:0px !important;
+}
+
+#toping{
+    margin: auto;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
 h3{
     color: #000000;
     text-align: left;
