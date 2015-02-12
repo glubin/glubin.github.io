@@ -1,42 +1,30 @@
-#image{ 
-	width: 100%;
-	height: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+body {
+	background-color: #5F9EA0; 
 }
 
-.col-md-3{
-	margin-top: 30px;
-	margin-bottom: 30px;
-
+.jumbotron {
+	background-color: #E0FFFF;
 }
 
-li{
-	display:inline;
+
+#middlePage {
+	 text-align: right
 }
 
-a:link, a:visited {
-    width: 120px;
-    color: #000000;
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "Verdana";
-    font-size: 12px;
-    font-weight: bold;
+#memory {
+	text-align: right;
+	margin-bottom: -1%;
 }
 
-a:hover, a:active {
-    color: #009999;
+#niceMessage {
+	text-align: center;
 }
-
-h1{
-    font-family: "Verdana";
-    font-size: 20px;
-    color: #009999;
-}
-
-#navbar{
-    text-align: center;
+#myFooter {
+	background-color: #E0FFFF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  
 }
