@@ -19,6 +19,7 @@
       <h1>Emily (<span id="middleName">My Favorite</span>) Orr,</h1>
       <h2 id="counter">I can't wait to see you in <span id="daysLeft"></span> <span id="dayFix">days</span>!</h2>
      <button id="myButton" type="button" class="btn btn-info">Click Here If You Miss Me</button>
+     <button id="otherButton" type="button" class="btn btn-info">Click Here If You Miss Toothless</button>
       <h2 id="pic"></h2>
     </div>
   </div>
@@ -51,7 +52,9 @@
     <script>
  $(document).ready(function() {
     var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'missyou.mp4');
+    audioElement.setAttribute('src', 'audio/missyou.mp4');
+    var audioElement2 = document.createElement('audio');
+    audioElement2.setAttribute('src', 'audio/toothless.mp4');
 
     var countdown = 10000;
     var postCount = 0;
@@ -68,8 +71,13 @@ var niceMessage = ["I miss you", "See you soon", "On my way to Paris", "Cortina"
 
  $("#myButton").click(function(){
     audioElement.play();
-    console.log("button");
  });
+ $("#otherButton").click(function(){
+    audioElement2.play();
+ });
+
+
+
 
 $(document).keypress(function() {
   var random = Math.floor(Math.random() * niceMessage.length) + 0
