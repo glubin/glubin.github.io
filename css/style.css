@@ -1,51 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+
 body {
-	background-color: #5F9EA0; 
-}
-
-.jumbotron {
-	background-color: #E0FFFF;
-}
-
-#eLink{
-  text-decoration: none;
-  color:inherit;
-}
-
-#middlePage {
-	 text-align: right
-}
-
-#memory {
-	text-align: right;
-	margin-bottom: -1%;
-}
-
-#niceMessage {
-	text-align: center;
-}
-#myFooter {
-	background-color: #E0FFFF;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 100px;
-  
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+  background-color: grey;
+}
+html {
+    width: 100%;
+    height: 100%;
 }
 
-#pic{
-	text-align: center;
-  margin-bottom: -4%;
+h1,h2,h3,h4,h5,h6, p {
+  color:white;
 }
 
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+h1{
+  font-size: 50px;
 }
 
-#vid{
-	text-align: center;
+/*/Credit not to me for smooth ease-in-out/*/
+
+@media(min-width:767px) {
+    .navbar, h1 {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #f9f9f9;
+}
+
+.navbar {
+  widows: 100%;
+  height: 10%;
+	margin-top: 1em;
+  margin-left: 7em;
+  background-color: #d3d3d3;
+  background: transparent;
+  border: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: #f9f9f9;
+}
+.
+.navbar-inverse .navbar-form {
+  border-color: #f9f9f9;
+}
+
+.start{
+   margin-top: 3.5em;
+}
+.jumbotron{
+  height: 70%;
+  background-image: url("../img/grey.jpg");
+}
+
+#offButton{
+  margin-left: 1em;
+}
+
+#subHeader{
+  font-size: 30px;
+}
+
+.margLeft{
+  margin-left: 20px;
 }

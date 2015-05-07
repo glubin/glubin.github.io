@@ -1,174 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type"text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type"text/css"  href="css/style.css" >
-  <link rel="stylesheet" href="">
-  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <title>Ironclad</title>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+
 </head>
 
-
 <body>
-  <title>yOrr countdown</title>
 
-  <div class="jumbotron">
+
+  <div class="navbar-inverse navbar-default navbar-fixed-top hr">
     <div class="container">
-      <h1><a id="eLink" target="_blank" href="http://www.heyyeyaaeyaaaeyaeyaa.com">E</a><a id="eLink" target="_blank" href="https://www.youtube.com/watch?v=nVXmMMSo47s&list=RDyG0oBPtyNb0&index=11">m</a>ily (<span id="middleName">My Favorite</span>) <a id="eLink" target="_blank" href="https://www.youtube.com/watch?v=HZYfi_Ex_gM">O</a>rr,</h1>
-      <h2 id="counter">I can't wait to see you in <span id="daysLeft"></span> <span id="dayFix">days</span>!</h2>
-     <button id="myButton" type="button" class="btn btn-info">Click Here If You Miss Me</button>
-     <button id="otherButton" type="button" class="btn btn-info">Click Here If You Miss Toothless</button>
-      <h2 id="pic"></h2>
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav mineul" style="font-size:17px;margin-top:9px; color:white;">
+          <li class="myLink"><a href="#">IronClad Logo | </a></li>
+          <li class="myLink"><a class= "hvr-underline-from-left" href="#HowItWorks">How it Works</a></li>
+          <li class="myLink"><a class= "hvr-underline-from-left" href="#OurServices">Our Services</a></li>
+          <li class="myLink"><a class= "hvr-underline-from-left" href="#Testimonials">Testimonials</a></li>
+          <li class="myLink"><a class= "hvr-underline-from-left" href="#SignUp">Sign Up</a></li>
+          <li class="myLink"><a class= "hvr-underline-from-left" href="#AboutUs">About Us</a></li>
+        </ul>
+      </div>
     </div>
   </div>
-  
-<!--   <div id="vid">
-    <video width="320" height="240" controls>
-      <source src="start.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div> -->
 
-    <div class="jumbotron">
-      <div class="container">
-        <div class="col-md-6 col-md-offset-5">
-          <p class="middlePage" id="memory"></p>
-        </div>
+  <!-- Start screen -->
+  <div class="jumbotron start">
+    <div class="container">
+      <h1>Welcome to Ironclad</h1>
+      <div class="col-xs-7">
+        <p id="subHeader">Let us help you build your company the right way. We provide personalized, quality legal work for less [change to emphasize the differentiator]. $500 an hour is too much. [if cost]</p>
+      </div>
+      <br><br><br><br><br><br><br><br>
+      <p><a class="btn btn-primary btn-lg" href="#HowItWorks" role="button">Learn more
+        <a class="btn btn-primary btn-lg" href="#SignUp" role="button" id="offButton">Get Started</a></p>
       </div>
     </div>
 
-    <footer id="myFooter">
+    <div class="container">
+      <div class="row">
+        <center> <h3 > <img src="img/abnb.png"> <img class="margLeft" src="img/drop.png" alt=""> <img class="margLeft" src="img/amz.png" alt="">
+        </h3>
+        <p>[a nicer list of big name clinets OR investors (YC)]</p>
+      </center>
+       </div>
+     </div>
+
+
+     <!-- How it works -->
+     <a NAME="HowItWorks"></a>
+     <div class="jumbotron">
       <div class="container">
-        <br>
-        <h2 class="text-center" id="niceMessage">See you soon</h2>
+        <div class="row"></div>
+        <h1>How it Works</h1>
+          <h3>[a higher level "what you get" - flowchart diagram]</h3>
+          <h6>what are teh steps involved</h6>
+          <h3 class="col-xs-9">Don't let legal issues be your biggest barrier. We offer you high quality legal work for [specific target market]. As a team of lawyers and engineers, we have the means to [differentiator]. On time, when needed, etc.</h3>
+       </div>
       </div>
-    </footer>
+    </div>
 
 
+    <div class="container">
+      <div class="row">
+        <center> <h3 > releveant statistics, costs, hours, # served </h3> </center>
+       </div>
+     </div>
+
+    <!-- Our Services -->
+    <a NAME="OurServices"></a>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row"></div>
+        <h1>Our Services</h1>
+          <h3>[a deep dive into offerings]</h3>
+          <h3 class="col-xs-9">We provide - patent/trademark/copyright/incorporation/office hours/advice/etc. --> a deeper dive into what this would look like in practice. [[possible link to another page or dropdown that explains what each of the offerings really means]. Possibly a line emphasizing responsiveness.</h3>
+       </div>
+      </div>
+    </div>
 
 
-    <script>
- $(document).ready(function() {
-    var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'audio/missyou.mp4');
-    var audioElement2 = document.createElement('audio');
-    audioElement2.setAttribute('src', 'audio/toothless.mp4');
+    <!-- Testimonials -->
+    <a Name="Testimonials"></a>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hear from our [past] clients</h1>
+        <h3>[testimonials that emphasizes the key differentiator]</h3>
+        <p>Don't take our word for it - We're happy to put you in touch with our clients to verify that we offer the best.</p>
+        <blockquote class="blockquote blockTop">
+          <p>We've had a great experience with ironclad! They helped us...and for less... - James Proud, Hello Inc. (picture of company/him) </p>
+        </blockquote>
 
-    var countdown = 10000;
-    var postCount = 0;
-    var middleCounter = 0;
-    var delay = 5000;
+        <blockquote class="blockquote-reverse blockLower">
+          <p>Another quote describing another thing that Ironclad offers that other people don't.</p>
+        </blockquote>
 
-    var middleNameList = ['The Greatest','My Favorite','The Beautiful','The Captain','The Wonderful','The Reader','The Generalissimo','The Don','The Eldar','The Fellow','The Grand Admiral','The Grand Inquisitor','My Lady','Princeps','The Talented','The Freedom Bringer','The Honorable','The Redeemer']
-
-
-    var memoryList = ['Remember the time we went on our first date to Drunken Fish. I couldn\t park the car straight. We had awesome sushi, you told me about your family and awesome uncle. Then we went across the street for some great ice cream! I was nervous because I wanted everything to work out well, and I\'m so happy that it did :)', 'Remember the time we went to Food Truck Friday with Michelle and Leah. You ran into all of your freshman floor friends. That was probably the one time we didn\'t get Seoul Taco. But we saw some cute dogs and ate good food!', 'Remember the time we watched How To Train Your Dragon and it was absolutely epic. And then we tried to watch part two, but couldn\'t manage through it. You should have been right about your prediction, but I\'m sure he\'ll fine a partner in the third movie.', 'Remember the time we went on the camping trip and spent the entire day being active. There was a little kid that had a knife, so that happened. And he called us adults. But we still got to pet a frog, see horses, and roast marshmallows.', 'Remember the time we went to the zoo and were awkwardly at the same pace as another two people. But it was all good because we were able to see rhinos, hippos, and asian elephants! We grabbed dippin dots and saw the monkey exhibit.', 'Remember the time we went to your crush party. You kept feeding me quesadillas and wouldn\'t let me go within five feet of the wall. You were an adorable bam-bam and I was the blue ranger. It was freezing, so we crowded around the fire.','Jocelyn said you are "beautiful, remarkable, and insightful." Logan described you as "warm-hearted, boundless and sincere."','Remember when I texted you over the summer: "What was the name of the Indian captioned song?" You: "Benny lava! Haha. Just in the mood for some killer lyrics?','Remember the time we rushed to get Ian\'s car so we could get Toothless. We followed Sherlock\'s footsteps and used the sound funnel. You were checking me out. On the ride back you made him look like he was drumming and it was so adorable that I almost crashed.','Remember the time when we were about to go on our first date and you asked if I could pick you up from Siegle. I was in the car about to leave and you told me that you had already run back - but I wasn\'t joking about picking you up!','Remember the time we went to the food truck festival at forest park. We had pizza, deep friend oreos, and some tacos. We sat on Art Hill and looked at everyone enjoying the beautiful weather.','Remember the time we went to the zoo for funnel cake. We had a nice walk over, despite it being freezing cold. You comforted me when I thought the funnel cake station was closed. But we ate a great meal. We got hot chocolate because it was so cold, and we played with the birds (and a squirrel).','Remember the time we went to the art museum. How awesome was that. That may have been my favorite day of the semester. We took our time and just took it all in. You got to see some Picasso, and I found out that you are a genius when it comes to art.','Remember the time we watched The Shining. Sorry to remind you. But I\'m proud of you for getting through it :) - I promise I won\'t make any redrum jokes again.','Remember the time we cooked salmon - and that other time we cooked ground beef - and that other time we cooked italian sausages - and all the other things we made (cinnabon/kale chips/sprouts/pasta/lots of pasta/eggs/pancakes/bacon).','Remember the time we tried to go to the new Dough to Door location, but it was close. We had to order Dough to Door to their doorstep, but it ended upt taking forever. Kelsey had to go, so we walked all the way to Kayaks and got tea. (Kelsey drove us home because it was pouring).','Remember the time we played soccer with a bunch of Sigma Nu sophomores and you kicked my ass.','Remember the time we played johann sebastian joust and we were perfectly evenly matched. At least that\'s what I\'ll say because you would have won if I hadn\'t cheated. And when you laughed you lost :p','Remember the time we watched Indian Jones together and both admired the cinematography and how great the flags were.','Remember the time we discovered that there is an alternate mode of transportation that has to do with animals.','Remember the time you were a beached whale and I was a marine biologist. What?','Remember the time spent all of reading week studying in the same room in Simon. To the point where we made a door-sign that said "occupied." Amy didn\'t believe us.','Remember the time a mace was stolen from a photo-shoot. And later we stood out in the hallway and both saw full moons.','Remember the time there was sand everywhere. And we went on the most fun scavenger hunt. And we didn\'t use phones because that would be cheating.','Remember the time we made pancakes and you made a huge one. And you were actually able to flip it. That was awesome! Chef Orr.','Remember the time you threw squirtle. I do.','Remember the time when you told me all about Breeze Energy. And then I showed you how to use the twitter scripts. And you taught me all about the energy market.','Remember the time we grabbed dinner at the village (possibly our first one-on-one dinner) and I told you that I thought your life in Texas was filmed in black and white.','Remember the time you sent me this: https://www.youtube.com/watch?v=SSKatciX3hA','Remember the time that "me [Michelle] you Emily and kels were at my birthday dinner at Thai food. We talked about cat porn."','','To describe you in three words, Caitlin said you "always genuinely cares," and Hannah Gafen said "radiating smile & kindness."','Remember the time we played ultimate frisbee together, but didn\'t really know each other. I believe we ate lunch after with Rosie and someone else.','Remember the time you were texting me from Texas this summer. You sent a string of really long messages and were worried that you might be leading me on.','Remember the time you sent me this: http://aplus.com/a/the-faces-of-instant-regret','Remember the time where Carrick is still convenience that all we do is watch movies. And the one time he tried to watch a movie with us, he left...','Remember the time when all of our friends kept asking if anything was going to happen between us - the same night as "miss queen emily."','Remember the time I lost a bet with you so I had to call you miss queen emily. Then the next day we ate at panera with jordi and kelsey, and didn\'t mention anything about it...','Remember the time when the first few weeks we were dating, and 90% of the time we spent together was studying in the A stacks.','Remember the time "when we all met Emily\'s dad and it was kinda awkward and then I told him I had a 22 lb cat and he hysterically laughed."','Davis thinks you are "fun-loving, kind, and adventurous." Michelle described you as "supportive, dedicated, and what\'s a good word for when someone goes for things? Similar to adventurous but a better word than leader or explorer, so something that combines all three."','Remember the time when we admired the landscaping on campus because someone spends their entire career making our campus beautiful. Poor squirrel meat.','Remember the time we took this awkward picture at post-thurteen: http://on.fb.me/1Aga5MD.','Remember the time when I told you about this awesome luau themed party I went to...','Remember the time we were hanging out at Sigma Nu. We played pool and listened to music in the front room. The same room where we had a great night at Wine & Cheese [and you definitely didn\'t spill all over yourself]','Remember the time when we went the new seoul almost every day for a week, but it wasn\'t open. Fortunately, you were a genius and decided to check their social media accounts. They usually had the food truck outside, so we would get seoul and eat at starbucks.','Kelsey described you as "giving, compassionate, and poised." Meanwhile, Alex described you as "snail, potato. Did it in 2."','Remember the time.. I mean those times.. I mean every day when you wore spandex and your "notre dame" sweatshirt','Remember the time when Kelsey\'s favorite memory of us was "definitely that first time you guys were together when we were in the sig Nu basement and you spilled beer on her"','Remember the time you wore my boat shoes and had your letterman sweatshirt and you were flopping around and incredibly giddy and cute.','Remember the time we had a fantastic WILD and didn\'t even make it to WILD. But we did get Seoul and Ice Cream :)','Remember the time when you told me love you working with poop when you\'re on the farm. Or when you posted this: http://bit.ly/1zt3iJW.','Remember when you texted me: "Just thought you should know...there were many, many sloths in my dream last night. We might have been playing hide and go seek? That is all"','Remember the time when our hardest decision every day was whether or not we had time to get coffee after Seoul.','Remember "first day i got to school, i was locked out of my room. and Emily helped me carry all of my stuff upstairs which took forever and she totally didn\'t have to do (we weren\'t even that close at that point). and she helped me try to break into my room for an hour ( we failed lol) and we sat in the hallway of our suite and drank wine and talked for a couple hours and got to know each other better"','Jordi described you as "kind, funny, thoughtful." Ilan Friedman-Grunstein described you as "wait which Emily" because he doesn\'t know you.','Remember the time when you always happened to leave the room at the most awkward times. Fortuanately, you were able to "bond" with Nellie.','Remember the time where we found out your true name is Puffin McMuffin. I remember that day because you would not stop talking about how beautiful the name is and how well it fits you.','Remember the time my mom was afriad of doors, couldn\'t be looked her in the eye, and required you to curtsy. But then we had two very nice meals two nights in a row!','Remember the time we figured out that your earrings resembled the deathly hallows. And then you lost pretty much all of them. Fortunately we pulled a Harry Potter and found them all :)','Remember the time we hung out at Matt\'s and had Fla-Vor-Ice. We "subtly" let everyone know that we were together.','Remember that time when Alex commented: "mostly I liked being the third wheel and coming into the room and Emily used to look really uncomfortable but got way better haha" - Alex','"It\'s really neat seeing stuff I read in the newspaper at work. You know? Breeze is the only 100% green energy company in tx because it\'s the only one that\'s not a subsidiary of a larger coal-owning company. Since it\'s a startup (we haveike 3000 customers) everything I do for them is actually important and helpful so it\'s been really rewarding!" - Your text over the summer','Remember the time we took awkward pictures at WILD: http://on.fb.me/1DzTEvu','','Madeline Wareing said you are "compassionate, goofy, and charming." Sarah Jane said you are "sincere, encouraging, and ThebestfriendIcouldeveraskfor."','Remember the time that I walked to the back of Sigma Nu to meet you, so you wouldn\'t have to walk in by yourself :)','','Remember when we played Chardee MacDennis and you almost ate a raw egg. Good thing we microwaved the egg to kill off the germs!','Remember the time we watched inglorious bastards. It was probably the only movie that you were closest to falling asleep.','Remember the bus ride back from your crush party. Which was by far, without question, the best bus ride I have ever taken.','Remember when you taught me a bunch of words, like swooning and swaddling. And then you taught me other things, like how raisins make it look like you don\'t have teeth.','Remember when we went to Market Pub House and I ordered big breastfast platter :/ - and that other time when the guy next to us was alone and cheering on the Giants.','Remember that time we were walking to the zoo, but you had to stop back at your place to get a \'sweatshirt.\' Let me remind you, that I am an slow, and I ask too many questions :)','Alyssa Carrubba said you are "compassionate, admirable , and outgoing." Bonner said you are "genuine, warm-hearted, and all-around-one-of-the-absolute-nicest-and-caring-people-I-have-ever-known (...that\'s one word)."','Michelle: I love that after a long week of school we can have just as much fun going out as we can just hanging out and opening a bottle of wine and sitting in our hallway with Thai food. Also I am so behind excited to live with you again next year it\'s actually going to be incredible. You give the best advice and are one of the best listeners ever. Like actually','She\'s all packed up and ready to go, she\'s emma who...she\'s emma me. Woo! Your life is pretty much a tv show (better than the Truman Show).','Remember when we learned how to use the washing machine in the Sigma Nu basement during one of the open parties...Also that time that toothless was absolutely terrifying','Remember when we watched Borat. Yeah that a long time ago...That was the same night we watched the video of the overweight man shooting a gun. Quite an exciting night :p','Michelle: I want to say thank you for always being there for me and always listening to me bitch about things and cry over silly things, and that I really don\'t think I could\'ve made it through the semester without you.','Remember the time it was really cold, but we still went to art hill (trying to enjoy the last of the warm-ish weather). We grabbed some wine and cheese (I made a mess of the crackers), and formed we pretended to be a burrito.','Remember the time it was really cold, but we still went to art hill (trying to enjoy the last of the warm-ish weather). We grabbed some wine and cheese (I made a mess of the crackers), and pretended to be a burrito.']
-
-var niceMessage = ["I miss you", "See you soon", "On my way to Paris", "Cortina", "Toothless misses you", "Seoul Taco", "Tu me manques", "Blue is the color", "Wine & Cheese"]
-
- $("#myButton").click(function(){
-    audioElement.play();
- });
- $("#otherButton").click(function(){
-    audioElement2.play();
- });
+      </div>
+    </div>   
 
 
+    <!-- Sign Up -->
+    <a NAME="SignUp"></a>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 name="SignUp">Sign Up</h1>
+        <h3>[Outlining the sign-up process works]</h3>
+        <p></p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more </a></p>
+        <p>^ [link to separate page to fill out application/request/etc.]</p>
+      </div>
+    </div>     
+
+    <!-- About Us -->
+    <a NAME="AboutUs"></a>
+    <div class="jumbotron lastPage">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>Y Combinator Backed</p>
+        <div class="row">
+         <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+           <img src="img/texture.jpg" 
+           alt="broken link">
+         </div>
+         <div class="caption">
+           <h3>Thumbnail label</h3>
+           <p>Some sample text</p>
+           <p>
+           </p>
+         </div>
+       </div>
+       <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+         <img src="img/texture.jpg" 
+         alt="broken link">
+       </div>
+       <div class="caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text</p>
+         <p>
+         </p>
+       </div>
+     </div>
+
+   </div>
+ </div>
+
+    <div class="container">
+      <div class="row">
+        <center> <p> &copy; Ironclad, 2015 </p> </center>
+       </div>
+     </div>
 
 
-$(document).keypress(function() {
-  var random = Math.floor(Math.random() * niceMessage.length) + 0
-  $("#niceMessage").text(niceMessage[random]);
-
-});
-
-
-function updates(){
-    // console.log("updateTime ran" + ", countdown: " + countdown);
-    $("#pic").empty();
-    if (middleCounter < middleNameList.length){
-      middleCounter = middleCounter + 1;
-    } else {
-      middleCounter = 0;
-    }
-    $("#middleName").text(middleNameList[middleCounter]);
-
-
-    console.log(memoryList.length);
-    today = new Date();
-    BigDay = new Date("May 8, 2015");
-    msPerDay = 24 * 60 * 60 * 1000 ;
-    timeLeft = (BigDay.getTime() - today.getTime()) - 76800000;
-    e_daysLeft = timeLeft / msPerDay;
-    daysLeft = Math.floor(e_daysLeft);
-    e_hrsLeft = (e_daysLeft - daysLeft)*24;
-    hrsLeft = Math.floor(e_hrsLeft);
-    minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
-    countdown = daysLeft;
-    $("#daysLeft").text(daysLeft);
-    if (daysLeft == 65){
-      $("#pic").append('<br><img src="pic/tree.jpg" height="30%"/>');
-    }
-    if (daysLeft == 68){
-      $("#pic").append('<br><img src="pic/crush.jpg" height="30%"/>');
-    }
-    if (daysLeft == 31){
-      $("#pic").append('<br><img src="pic/crush.JPG" height="300px" class="rotate90"/>');
-    }
-    if (daysLeft == 1){
-      $("#dayFix").text("day");
-      $("#memory").text(memoryList[daysLeft-1])
-    } else if (daysLeft > 1){
-      $("#memory").text(memoryList[daysLeft-1])
-      console.log("Days: " + daysLeft + ", Hours: " + hrsLeft + ", Min: " + minsLeft);
-    } else {
-      $("#counter").text("See you shortly :)");
-      timerFinished();
-    }
-  };
-
-  function timerFinished(){
-    $("#pic").empty();
-    $("#myFooter").css("background-color","#E0FFFF");
-    $(".jumbotron").css("background-color","#E0FFFF");
-    $("body").css("background-color","#6a84ad");
-
-    if (postCount==64){
-      $("#pic").append('<br><img src="pic/tree.jpg" height="30%"/>');
-    }
-    if (postCount==67){
-      $("#pic").append('<br><img src="pic/crush.jpg" height="30%"/>');
-    }
-    if (daysLeft == 30){
-      $("#pic").append('<br><img src="pic/wc.jpg" height="300px" class="rotate90"/>');
-    }
-    $("#memory").text(memoryList[postCount]);
-    if (postCount < memoryList.length){
-      postCount = postCount + 1;
-    } else {
-      postCount = 0;
-    }
-
-    delay = 5000;
-    //$("#myFooter").remove();
-  };
-
-
-
-  updates();
-  setInterval(updates,delay);
-
-
-
-
-
-   });
-
-
-
-
-
-
-  </script>
 </body>
 </html>
