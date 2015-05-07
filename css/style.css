@@ -59,7 +59,12 @@ h1{
 .start{
    margin-top: 3.5em;
 }
-.jumbotron{
+.jumbotron1{
+  height: 70%;
+  background-image: url("../img/grey.jpg");
+}
+
+.jumbotron2{
   height: 70%;
   background-image: url("../img/grey.jpg");
 }
